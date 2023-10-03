@@ -1,0 +1,39 @@
+.input_style{
+    border: 2px solid #575757; 
+    -webkit-border-radius: 10px;
+    background: #cacaca !important;
+    outline: none;
+    height: 24px; 
+    width: 120px;
+    color: #000000;
+    width: 10%;
+    padding: 12px 20px;
+    margin: 0px 0;
+    box-sizing: border-box;
+}
+.input_button{
+    border: 2px solid #575757; 
+    -webkit-border-radius: 10px;
+    background: #c2c2c2 !important;
+    margin: 4px 0;
+}
+body{
+    background-color: rgb(185, 176, 173);
+}
+
+h1{
+    text-align: center;
+}
+
+h4{
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    text-align: center;
+}
+
+
+ul{
+    list-style-type: none;
+    list-style-position: outside;
+    text-align: center;
+}
