@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 
 # Создание экземпляра бота
-bot = telebot.TeleBot('5907538555:AAEgEcC5V1Pf5dC76jS269OpLP3_9dFiU3M')
+bot = telebot.TeleBot('')
 
 
 # Обработчик команды /start
