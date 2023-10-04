@@ -31,6 +31,11 @@ h4{
     text-align: center;
 }
 
+a { color:#52607a;  transition: 0.5s;
+text-decoration:none;
+}
+a:hover { color:midnightblue; }
+
 
 ul{
     list-style-type: none;
