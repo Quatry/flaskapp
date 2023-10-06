@@ -6,17 +6,28 @@
     <link rel="stylesheet" href="/static/styles/style.css" type="text/css">
 </head>
 <body class="color">
+    <script>
+        function okno(){
+        alert('Студент добавлен')
+        }
+    </script>
 <form method="post">
     <h4>
-    Имя<br><input class="input_style" type="text" name='first_name' id='first_name'><br>
-    Фамилия<br><input class="input_style" type="text" name='last_name' id='last_name'><br>
-    Курс<br><input class="input_style" type="number" name='course' id='course'><br>
-    <input class="input_button" type="submit" value="Отправить">
+    <label for="first_name">Имя</label>
+    <input class="input_style" type="text" name='first_name' id='first_name' placeholder="Имя" required>
+    
+    <label for="last_name">Фамилия</label>
+    <input class="input_style" type="text" name='last_name' id='last_name' placeholder="Фамилия" required><br>
+    
+    <label for="course">Курс</label>
+    <input class="input_style" type="range" name='course' id='course' min="1" max="4" placeholder="Курс" required><br>
+    <button onclick="okno()" class="registerbtn" type="submit">Зарегистрировать</button>
     </h4>
 </form><br>
 <h4>
-<a href="/students">Перейти к списку студентов</a><br>
-<a href="/">Вернуться на главную</a>
+    <div class="container signin">
+        <p>Общий список студентов -  <a href="/students"> Перейти</a>.</p>
+      </div>
 </h4>
 </body>
 </html>
