@@ -33,7 +33,7 @@ def add_page():
         try:
             db.session.add(student)
             db.session.commit()
-            return redirect('/')
+            return redirect('/students/')
         except:
             return "При добавлении студента произошла ошибка"
     else:
@@ -45,9 +45,11 @@ def all_students():
     students = Student.query.order_by(Student.last_name).all()
     return render_template('students.html',students = students)
 
-@app.route('/student-created/')
-def student_created():
-    return render_template('studentcreated.html')
+@app.route('/students/<int:id>/')
+def about_student(id):
+    student = Student.query.filter_by(id = id).all()
+    print(student)
+    return render_template('about_student.html', student = student)
 
 if __name__ == '__main__':
     app.run(debug=True)
